@@ -18,7 +18,7 @@ app.get('/', function(request, response) {
 	var fs = require('fs');
 	fs.readFileSync("index.html", function(err, data){
 		if(err) throw err;
-		var content = data.toString('utf-8');
+		var content = data.toString();
 		reponse.send(content);
 	});
 });
