@@ -10,7 +10,7 @@ fs.readFileSync('index.html', function(err, data){
 	console.log(content);
 	app.get('/', function(request, response){
 		
-		response.send(content);
+		response.send("hello world!");
 	});
 });
 
